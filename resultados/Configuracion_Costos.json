@@ -1,0 +1,11 @@
+{
+  "C_FP": 5000,
+  "C_FN": 50000,
+  "Umbral teorico": 0.09090909090909091,
+  "Umbral empirico CV": 0.040401216596364975,
+  "Modelo ganador": "XGBoost",
+  "Estrategia ganadora": "Pesos",
+  "Estrategia pesos comparada": "XGBoost",
+  "Muestra": 250000,
+  "Prueba rapida": false
+}

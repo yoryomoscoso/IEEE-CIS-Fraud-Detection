@@ -1,0 +1,6 @@
+# Instalar solo lo necesario para visualizar el dashboard de resultados.
+streamlit>=1.38,<2
+plotly>=5.18,<7
+numpy>=1.26,<3
+pandas>=2.0,<3
+scikit-learn>=1.5,<2

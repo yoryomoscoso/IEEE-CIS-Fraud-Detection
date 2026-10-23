@@ -1,0 +1,14 @@
+﻿.venv/
+venv/
+__pycache__/
+*.pyc
+data/
+prueba_rapida/
+*.joblib
+*.pkl
+.env
+.env.*
+!.env.example
+kaggle.json
+resultados/Muestra_estratificada.csv
+resultados/Tabla_CV_parcial.csv

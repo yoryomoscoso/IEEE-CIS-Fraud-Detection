@@ -1,0 +1,69 @@
+CERTAMEN 1 - IEEE-CIS FRAUD DETECTION
+Profesor: Danilo Gomez Correa
+Integrantes: Miguel Gonzalez | Jorge Moscoso | Francisca Palacios
+
+===========================
+INICIO RAPIDO (WINDOWS)
+===========================
+1. Extraer el ZIP completo a una carpeta del computador.
+2. Hacer doble clic en 01_INICIAR_DASHBOARD.bat
+3. En el primer uso, Windows requiere Python y conexion a Internet para instalar dependencias.
+4. Esperar a que se abra el navegador, normalmente en http://localhost:8501
+5. Para terminar: cerrar la ventana de comandos o presionar Ctrl+C alli.
+
+NO se requiere ejecutar Certamen1.py ni volver a entrenar los modelos para el dashboard.
+Se muestran resultados REALES exportados de la ejecucion oficial en Colab.
+
+===========================
+ENTREGA EN GOOGLE COLAB
+===========================
+1. Ir a https://colab.research.google.com/
+2. Subir notebook/Certamen1_IEEE_CIS_Dashboard_Colab.ipynb
+3. Usar MODO = 'resultados' (valor predeterminado).
+4. Ejecutar las celdas en orden. Cuando lo solicite, subir Resultados_Certamen1.zip
+5. Revisar las tablas, los graficos y el simulador del notebook.
+
+REPRODUCCION DESDE CERO:
+Cambiar MODO = 'entrenar', subir train_transaction.zip (IEEE-CIS Kaggle) y ejecutar
+las etapas en orden. Este proceso entrena de nuevo los diez modelos y puede tardar.
+Los datos originales NO se incluyen en esta entrega; estan disponibles bajo las
+condiciones del repositorio de la competencia:
+https://www.kaggle.com/competitions/ieee-fraud-detection
+
+===========================
+ARCHIVOS IMPORTANTES
+===========================
+00_LEER_PRIMERO.html           Portada e instrucciones visuales.
+01_INICIAR_DASHBOARD.bat      Ejecuta el dashboard en Windows (doble clic).
+dashboard.py                   Codigo del simulador Streamlit.
+notebook/*.ipynb              Trabajo y simulador integrados en Colab.
+Certamen1.py                  Codigo Python de entrenamiento por etapas.
+Resultados_Certamen1.zip      Resultados oficiales para subir a Colab.
+resultados/                   CSV y JSON oficiales para Streamlit.
+graficos/                     Siete graficos PNG para presentar.
+requirements_dashboard.txt    Dependencias minimas para el dashboard.
+requirements_entrenamiento.txt Dependencias para reproduccion completa.
+documentacion/                Ficha tecnica y notas academicas.
+
+===========================
+DATOS Y ALCANCES
+===========================
+- Dataset original: 590.540 transacciones, 3,5 % fraudes.
+- Muestra estratificada: 250.000 registros; 30 predictores.
+- Test reservado: 50.000 registros.
+- 10 combinaciones: 5 modelos x SMOTE/Pesos.
+- Ganador segun F1 CV: XGBoost + Pesos, F1 CV = 0,486969.
+- Costos supuestos: FP = $5.000; FN = $50.000 CLP.
+- Test: umbral 0,5 = $45.370.000; umbral empirico CV = $35.400.000.
+  Diferencia = $9.970.000 para este conjunto de prueba, no ahorro anual real.
+- Umbral teorico: $32.035.000 en test bajo los mismos supuestos.
+- El umbral se elige mediante TRAIN/CV; TEST se reserva para evaluacion.
+- AdaBoost con pesos usa sample_weight balanceado con arbol max_depth=1;
+  no cumple literalmente class_weight=balanced dentro del arbol de la pauta.
+- El Brier score no prueba por si solo una calibracion perfecta.
+
+La presentacion definitiva del grupo debe incorporarse cuando este terminada.
+Este paquete entrega el notebook, resultados y simulador listos para revision.
+
+Aclaracion: Los graficos y resultados provienen del ZIP oficial adjuntado por
+el grupo, por lo que deben evitarse mezclas con archivos de pruebas rapidas.

@@ -1,0 +1,11 @@
+Durante el desarrollo de este certamen utilizamos ChatGPT, de OpenAI, como herramienta de apoyo en distintas etapas del proyecto.
+
+Su utilización estuvo orientada principalmente a la organización y estructuración del código, la identificación y corrección de errores de programación, la implementación y revisión de procedimientos de Machine Learning, el desarrollo del dashboard interactivo en Streamlit y la preparación de documentación técnica y material de apoyo para la presentación.
+
+También utilizamos esta herramienta para comprender y revisar conceptos relacionados con los modelos de ensamble, el tratamiento del desbalance de clases, los pipelines, la validación cruzada y la evaluación económica de los errores de clasificación.
+
+Los modelos fueron ejecutados sobre el dataset IEEE-CIS Fraud Detection, obteniendo métricas y resultados a partir de los experimentos realizados en Python y Google Colab.
+
+Como equipo, asumimos la responsabilidad por las decisiones metodológicas adoptadas, la revisión del código, la interpretación de los resultados y las conclusiones presentadas.
+
+La inteligencia artificial fue utilizada como una herramienta de asistencia durante el desarrollo, depuración y documentación del proyecto, y no como sustituto de la ejecución experimental ni de la evaluación crítica de los resultados.
